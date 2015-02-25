@@ -1,0 +1,113 @@
+---
+title: "Learning the Ropes Via the Community"
+author: "Steph Locke"
+date: "@ Oxford SQL Server User Group"
+output:
+  ioslides_presentation:
+    css: Look.css
+    fig_height: 6
+    fig_width: 8
+---
+
+## First up
+>- We're gonna do a little exercise!
+>- An exercise in helping each other and the organisers
+>- [http://bit.ly/SQLOxfordSurvey](http://bit.ly/SQLOxfordSurvey)
+>- We'll follow this up a bit later ...
+
+![http://bit.ly/SQLOxfordSurvey](imgs/surveyQR.png)
+
+# Onto business ...
+
+## Objective
+Learn about:  
+
+- the different SQL community activities available 
+- how they translate into skills you're interested in developing
+- who to contact about getting involved
+
+## Attending
+- You're doing it right now
+- You improve your technical knowledge
+- You get to network
+
+Continue as-is
+
+## User group organising
+- Either put on events in your local area or assist with the events
+- Oxford UG exists, but where are y'all from?
+- As a lead organiser, gain lots of organisational skills and improved people skills
+- As a team member, gain some organisational skills and improved people skills
+
+- To organise: talk to myself or Craig to help you on the path
+- To help Oxford SSUG: talk to Craig or Suzie
+
+## Conference organising
+- Either BYOC or help with an existing one
+- SQLRelay & SQL Saturdays are prime examples
+- As a key organiser, gain lots of management, practical, & people skills
+- As a team member, gain lots of practical & people skills
+
+- To be main organiser of brand new conf: just get going
+- To be a key organiser of existing conf: email / tweet 
+- To be a team member of existing conf: email / tweet (recommended)
+
+## PASS 
+- Volunteer portal
+- Help at events or get involved with organisation like program selection
+- Easier for introverts, gain organisational skills
+- Run / assist with a Virtual chapter (see UG slide)
+
+- [PASS website](http://sqlpass.org)
+
+## Helping at events
+- On the day helping
+- Gain knowledge (room monitoring), people skills
+
+- Keep an eye out for calls for volunteers
+- Let organisers know you want to help out
+- Offer to help on the day if you notice an extra hand is needed
+
+## Presenting
+- From 5 mins to full days
+- Excellent way to improve your knowledge, communication and organisation skills
+
+- Talk to your UG leader for a soft start
+- Put yourself forward for a lightning talk at events like SQLBits
+- Submit sessions when you see a call for speakers
+
+## Blogging
+- Disseminate your knowledge to the interwebs
+- Great boost to your knowledge, communication and branding skills
+
+- JFDI ... Azure website for free anyone?
+
+## Online helping
+- Forums like StackOverflow, and the #sqlhelp tag
+- Improve knowledge, research and communication skills
+
+- Again, JFDI
+
+# Skills matrix!
+
+----
+```{r, echo=FALSE}
+library(data.table)
+library(ggplot2)
+library(scales)
+library(optiRum)
+scores<-fread("SkillMatrix-complete.csv")
+ggplot(scores, aes(y=Skill,x=wordwrap(Activity), fill=Level)) + 
+  geom_tile() + 
+  scale_fill_gradient(low="white", high="#90C226") + 
+  xlab("") + ylab("")+
+  theme_optimum(base_size = 12) + theme(legend.position="none")
+  
+```
+
+## Conclusion
+There's lots of ways you can get involved with the community
+
+I suggest looking at the @SQLRelay account's lists for finding organisers, UGs & conferences to follow  
+
+Now back to the exercise!
